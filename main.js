@@ -1,3 +1,30 @@
+let currentSlide = 0;
+
+const showSlide = (index) => {
+    const slides = document.querySelectorAll('.slider_sub');
+    const slider = document.querySelector('.slider');
+    const totalSlides = slides.length;
+
+    if (index >= totalSlides) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    const offset = -currentSlide * 100;
+    slider.style.transform = `translateX(${offset}%)`;
+}
+
+const onClickNextButton = () => {
+    showSlide(currentSlide + 1);
+}
+
+const onClickBeforeButton = () => {
+    showSlide(currentSlide - 1);
+}
+
 const openMenu = () => {
   document.getElementById("sidebar").style.maxWidth = "720px";
   document.getElementById("sidebar").style.width = "100%";
@@ -25,9 +52,11 @@ const isScrolled = () => {
 
 window.onload = function () {
   isScrolled();
+  showSlide(currentSlide);
 };
 
 window.onscroll = function () {
   isScrolled();
 };
+
 
