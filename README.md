@@ -10,6 +10,11 @@ WebLayout es una aplicación web desarrollada con HTML, CSS y JavaScript. Esta a
 - **CSS**
 - **JavaScript**
 
+## Demo en vivo
+
+Puedes ver la aplicación en vivo en GitHub Pages:
+[WebLayout Live](https://pvmendez.github.io/WebLayout/index.html#)
+
 ## Instalación y uso
 
 ### Instalación
