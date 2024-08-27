@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans";
+    scroll-behavior: smooth;
   }
   
   /* =====================
@@ -889,7 +890,6 @@
   .footer_links {
     display: flex;
     width: 50%;
-  
     align-content: center;
     justify-content: center;
   }
@@ -901,6 +901,11 @@
     padding-top: 86px;
     padding-left: 140px;
     justify-content: center;
+  }
+
+  .footer_links_body a {
+    text-decoration: none;
+    color: inherit;
   }
   
   .footer_rights {
