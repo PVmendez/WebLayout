@@ -23,6 +23,11 @@ const isScrolled = () => {
   }
 };
 
+window.onload = function () {
+  isScrolled();
+};
+
 window.onscroll = function () {
   isScrolled();
 };
+
