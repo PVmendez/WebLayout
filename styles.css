@@ -26,11 +26,11 @@
     top: 0;
     padding: 0 50px;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
   }
   
   .header {
-    z-index: 2;
+    z-index: 3;
     justify-content: space-between;
     min-height: 100px;
     display: flex;
@@ -109,7 +109,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     top: 0;
     right: 0;
     background-color: #111;
@@ -1284,6 +1284,10 @@
 
     .sidebar-nav, .sidebar-heading, .search-translate, .newsletter-suscribe {
       padding: 10%;
+    }
+    
+    .image_container img {
+      width: 150px;
     }
   }
   
